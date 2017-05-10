@@ -1,0 +1,293 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda aplicacion movil</title>
+
+ <!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema-app6.min.css"/>
+ <link rel="stylesheet"href="css/jquery.mobile.icons-1.4.5.min.css"/> 
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>  
+ <!--grupo JavaScript--> 
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+ 
+ <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/moto.jpg','imagenes/benito.jpg','imagenes/monumento2.jpg','imagenes/1_mni.jpg')">
+
+ <div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Batalla de Puebla</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+ </div>
+ <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/museo2.jpg" alt="museo2" title="museo2" id="wows1_0"/></li>
+		<li><img src="data1/images/benito.jpg" alt="benito" title="benito" id="wows1_1"/></li>
+		<li><img src="data1/images/monumento1.jpg" alt="monumento1" title="monumento1" id="wows1_2"/></li>
+		<li><img src="data1/images/monumento2.jpg" alt="monumento2" title="monumento2" id="wows1_3"/></li>
+		<li><img src="data1/images/museo1.jpg" alt="museo1" title="museo1" id="wows1_4"/></li>
+		<li><img src="data1/images/miguel_negrete.jpg" alt="Miguel_Negrete" title="Miguel_Negrete" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/1_mni.jpg" alt="jquery slider" title="1_mni" id="wows1_6"/></a></li>
+		<li><img src="data1/images/batalla.jpg" alt="batalla" title="batalla" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="museo2"><span><img src="data1/tooltips/museo2.jpg" alt="museo2"/>1</span></a>
+		<a href="#" title="benito"><span><img src="data1/tooltips/benito.jpg" alt="benito"/>2</span></a>
+		<a href="#" title="monumento1"><span><img src="data1/tooltips/monumento1.jpg" alt="monumento1"/>3</span></a>
+		<a href="#" title="monumento2"><span><img src="data1/tooltips/monumento2.jpg" alt="monumento2"/>4</span></a>
+		<a href="#" title="museo1"><span><img src="data1/tooltips/museo1.jpg" alt="museo1"/>5</span></a>
+		<a href="#" title="Miguel_Negrete"><span><img src="data1/tooltips/miguel_negrete.jpg" alt="Miguel_Negrete"/>6</span></a>
+		<a href="#" title="1_mni"><span><img src="data1/tooltips/1_mni.jpg" alt="1_mni"/>7</span></a>
+		<a href="#" title="batalla"><span><img src="data1/tooltips/batalla.jpg" alt="batalla"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">responsive slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  
+ <div> 
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui -last-child">
+  <a href ="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+   <h2>Batalla 4 de Mayo</h2> 
+   <p>Historia</p> 
+  </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Batalla 5 de Mayo</h2>
+        <p>Historia</p>
+     </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Monumentos de la Batalla</h2>
+      <p>Ejemplos</p> 
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Héroe de la Batalla</h2>
+       <p>Vida</p> 
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Muceos</h2>
+      <p>Lugares.</p>
+   </a> 
+  </li> 
+  </ul>
+ </div>
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+   <div>
+     <img src="imagenes/logo.ico" width="46" height="46"> 
+   </div> 
+   <div>
+     <h4>Aplicacion Seis</h4> 
+     <h4>María Elena Gómez Tepox</h4> 
+   </div> 
+ </div>
+</div> 
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Batalla 4 de Mayo</h1>
+   </div>
+   <div data-role="content" align="justify">
+     <div>
+       <h4><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/1_mni.jpg',1)"><img src="imagenes/4mayo.jpg" width="300" height="162" id="Image15"></a></h4>
+       <h4>La llegada de la industria textil en Atlixco implicó para la región un cambio favorecedor en el estilo de vida; sin embargo, ésta época de desarrollo textil en el valle de Atlixco coincide con el movimiento revolucionario. La influencia del movimiento de Emiliano Zapata en pro de de la tierra, sumó a un gran número de trabajadores inconformes y  líderes de esta lucha revolucionaria de la región como Fortino Ayaquica y Domingo y Cirilo Arenas, que trataron de hacer insurrección en las fábricas textiles, hechos violentos que sucedieron entre 1911 y 1917 en la fábrica textil de Metepec. Incluso, el historiador Jeffrey Bortz, sostiene que los trabajadores de la industria textil del corredor fabril México, Tlaxcala y Atlixco, Puebla, aportaron las principales reivindicaciones laborales que quedaron plasmadas en la Constitución de 1917.<br>
+         Una distinción que enorgullece a los atliscenses  fue la Declaratoria mediante la cual Atlixco fue nombrada por Decreto del Congreso del Estado en el año de 1998 “Heroica Ciudad de Atlixco” por la defensa que dieron en contra del ejército norteamericano en 1848, y el reconocimiento al batallón “Libres de Atlixco” comandado por el general Joaquín Rea, que enfrentaron en un ataque desigual, contra de una población indefensa demostrando el gran valor de los atliscenses.<br>
+         Nuevamente,  un 4 de mayo de 1862, Atlixco, enfrenta una batalla en contra de conservadores que pretendían sumarse al Ejército Francés. Hecho decisivo en la epopeya del 5 de Mayo, que hoy es parte de la historia nacional.<br>
+         El propio Benito Juárez creó una medalla reconociendo esta aportación de los atliscenses  que señalaba: “Derrotando a los traidores el 4 de mayo, contribuyó eficazmente al triunfo alcanzado en Puebla en contra del Ejército Francés el 5 de mayo de 1862”<br>
+         El propio gobierno de Benito Juárez consideró que sin el triunfo del 4 de mayo en Atlixco, no hubiera sido posible la victoria del 5 de mayo en Puebla.<br>
+         Justamente ello fue el sustento para que en el año 2010: Del Bicentenario y Centenario de nuestros movimientos fundacionales, por unanimidad de votos, el Congreso del Estado aprobara el Decreto en el que se declara “Dos Veces Heroica la Ciudad de Atlixco”  <br>
+         La aportación de Atlixco y la región al movimiento de Independencia está plasmada en la obra de la historiadora Alicia Tecuanhuey, “La formación del consenso por la Independencia. Lógica de la Ruptura del Juramento. Puebla, 1810-1821”<br>
+         Por ello importante hacer una recordación de estos hechos, en el contexto de los eventos conmemorativos al 4 y al 5 de Mayo celebrados en Atlixco y en la ciudad de Puebla, éstos últimos con la presencia del Presidente de México Enrique Peña Nieto. Primero, porque para Atlixco es un gran orgullo y también, porque representa sin duda, la aportación histórica, cultural y social que Atlixco ha dado a Puebla y al país y que servirá a las y los jóvenes de hoy, y a las futuras generaciones,  para rescatar su interés por la historia y fundamentalmente el sentido de identidad y pertenencia a esta noble tierra: Atlixco.</h4>
+       <center><p><img src="imagenes/batalla.jpeg" width="322" height="206" alt="4"></p></center>
+     </div>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div>
+   </div>
+ </div>
+  <div data-role="main" class="ui-content" align="center">
+ <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="c">
+   <li class="ui-first-child ui-last-child">
+   <a href="http://www.tribunanoticias.mx/atlixco-conmemora-el-hecho-historico-de-la-batalla-del-4-de-mayo/" data-role="button" >
+    <h3>Conmemoracion</h3>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+   <a href="http://eldeforma.com/2017/05/05/batalla-de-puebla/" data-role="button" >
+    <h3>Lo que no sabias</h3>
+    </a>
+    </li>
+    </ul>
+    </div>
+    </div> 
+   <div data-role="footer" data-theme="b" data-position="fixed">
+     <h4>Aplicacion Seis, MEGT</h4>
+   </div>
+ </div>
+ 
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Batalla 5 de Mayo</h1>
+    </div>
+    <div data-role="content" align="justify"> 
+      <div> 
+        <h4>La Batalla de Puebla tuvo lugar el 5 de mayo de 1862 cerca de la ciudad de Puebla (México), en el ataque y defensa del Fuerte de Loreto y del Fuerte de Guadalupe, durante la invasión francesa a México. En México se conmemora con el “Cinco de Mayo”. Fue una importante victoria mexicana con resonancia global, pues venció al ejército más experimentado y reputado de la época.<br>
+En 1861, después de la larga lucha conocida como la “Guerra de Tres años”, México estaba en pésimas condiciones económicas y políticas. Tenía una enorme deuda con España, Francia e Inglaterra . Por ello Benito Juárez, quien recientemente había sido eleguido Presidente de México, declaró una moratoria que duraría dos años, o sea que acordó no pagarles durante este tiempo para que México pudiera reponerse.<br>
+Esta decisión, no gustó a las naciones extranjeras y así los franceses, españoles e ingleses vinieron a México con el fin de cobrarse a la fuerza la deuda.
+En octubre de 1861, España, Inglaterra y Francia se reunieron y decidieron invadir el país, para ello formaron una Alianza Militar Tripartita. Pero, si bien el motivo de la invasión era exigir el pago de las deudas, los países extranjeros tenían otros intereses particulares:
+- España quería recuperar el dominio de México, porque había perdido sus colonias en América.<br>
+-Inglaterra, contaba con un gran poder industrial y financiero y su imperio se había extendido por Asia y África, pero también querían extenderlo en América.<br>
+- El imperio Francés se había desarrollado mucho en Europa y quería abrir nuevos mercados y establecer ricas colonias mineras.<br>
+Así fue, con una idea común, pero con distintos fines, los ejércitos de los tres países aliados llegaron a México. Juárez les pidió que llegaran a un arreglo amistoso. Como resultado de las negociaciones elaboraron un documento llamado los Acuerdos o Tratados de Soledad y aceptaron la propuesta de Juárez sobre el pago de la deuda.En esta reunión también reconocieron el gobierno de Juárez; declararon que respetarían la integridad y la independencia nacional. España e Inglaterra cumplieron con los acuerdos, pero Francia no lo hizo y mandó tropas para invadir el país, por lo que se rompió la alianza.
+Las tropas francesas estaban muy bien equipadas y eran mucho más grandes que el ejercito Mexicano; por lo que Benito Juárez convocó a toda la población a que luchara, así se formó un ejército de aproximadamente 4800 hombres. 
+Fue el 5 de Mayo de 1862 cuando el General Laurencez al mando de las tropas francesas ordenó el asalto a los fuertes de Loreto y Guadalupe, que defendían la ciudad de Puebla al mando del General Ignacio Zaragoza; el ejercito invasor que fue rechazado con grandes pérdidas al intentar repetidas veces tomar las fortificaciones, al final tuvieron que abandonar el campo y retirarse vencidos y perseguidos por la caballería mexicana. <br>
+Finalmente, el ejército francés fue derrotado y el general Ignacio Zaragoza, mandó un mensaje telegráfico al presidente Juárez, que decía “Las armas nacionales se han cubierto de gloria”
+La Batalla de Puebla simboliza el espíritu de lucha y el amor a la independencia que caracteriza el pueblo mexicano. Actualmente éste día se celebra realizando ceremonias cívicas, en muchas ciudades se realizan desfiles. y también es costumbre representar la lucha de ése día con gente personificada tanto de mexicanos como franceses.</h4>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Batalla</h1>
+     <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/benito.jpg',1)"><img src="imagenes/batalla-5-de-mayo.jpg" width="299" height="152" id="Image10"></a><br>
+      
+    </div>
+  </div>
+ </div> 
+    <div data-role="footer" data-theme="b" data-position="fixed">
+      <h4>Aplicacion Seis, MEGT</h4>
+    </div>
+     </div>
+  
+   
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Monumentos de la Batalla</h1>
+    </div>
+<div data-role="content" align="justify"> 
+  <div> 
+        <h4>Trabajadores del gobierno de Puebla empezaron a desmontar los más de seis mil 700 metros de madera de supuesto origen finlandés que cubrían el Monumento Emblemático por el 150 Aniversario de la Batalla de Puebla, inaugurado hace menos de cinco años por el mandatario Rafael Moreno Valle, con una inversión de 44.5 millones de pesos.</h4> 
+    <div data-role="main" class="ui-content"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/monumento2.jpg',1)"><img src="imagenes/monumento1.jpg" width="268" height="164" id="Image7"></a></div>
+    <div data-role="collapsible" data-content-theme="false">
+    <h1>Monumentos</h1>
+     <div><img src="imagenes/monumento3.jpg" width="335" height="182" alt="m5"><br>
+    </div>
+  </div>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="c">
+   <li class="ui-first-child ui-last-child">
+   <a href="http://www.archdaily.mx/mx/02-217021/monumento-emblematico-del-150-aniversario-de-la-batalla-de-puebla-ten-arquitectos" data-role="button">
+    <h3>Mas información</h3>
+    </a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+      <h4>Aplicacion Seis, MEGT</h4>
+    </div>
+</div>
+</div>
+  
+  
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Heroe de la Batalla</h1>
+    </div>
+    <div data-role="content" align="justify"> 
+      <div> 
+        <h2>Miguel Negrete Novoa</h2><h4> fue un general militar nacido el 8 de mayo de 1824 en Tepeaca, Puebla; es considerado el principal héroe de la batalla del 5 de mayo de 1862 después del General Ignacio Zaragoza.<br>
+Negrete fue investido con el cargo de general en 1862 por orden de Ignacio Zaragoza, fue el único militar nacido en Tepeaca con el grado de General de División, por ese motivo,  su recuerdo se mantiene vivo como en monumento en la Plaza de Armas, o la inscripción de su nombre en letras de oro en el muro de honor del Congreso del Estado.</h4>
+        <center><p><img src="imagenes/Miguel_Negrete.jpg" width="181" height="208" alt="mn5"></p>
+          <p><img src="imagenes/heroe2.jpg" width="158" height="180" alt="h2"><img src="imagenes/heroe.jpg" width="203" height="171" alt="he"></p></center>
+   </div>
+    </div>
+      <div data-role="main" class="ui-content">
+    <div>
+  </div>
+ </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicacion Seis, MEGT</h4> 
+  </div>
+</div>    
+   
+   
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Museos</h1>
+    </div>
+    <div data-role="content" align="justify">
+       <div>
+          <h3>Museo Interactivo 5 de Mayo<br>
+          </h3>
+          <h4>Horarios y costos:<br>
+Abierto al público de martes a sábado de 10 a 18 hrs., Domingo de 10 a 16 hrs.
+Entrada libre.</h4>
+      <h3>Museo del caracol</h3>
+      <p><img src="imagenes/museo1.jpg" width="311" height="174" alt="m1"><img src="imagenes/museo2.jpg" width="403" height="187" alt="m2"></p>
+      </div> 
+        </div>
+        <div data-role="main" class="ui-content">
+        </div> 
+        <div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="c">
+   <li class="ui-first-child ui-last-child">
+   <a href="http://recorrido-por-lahistoria.blogspot.mx/2012/01/museo-del-caracol.html" data-role="button" >
+    <h2>Museo</h2>
+    </a>
+    </li>
+    </ul>
+    </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Aplicacion Seis, MEGT</h4>
+        </div>
+      </div>
+      </div>
+      
+</body>
+</html>
